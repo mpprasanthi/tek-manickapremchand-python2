@@ -41,15 +41,15 @@ class Puppy(db.Model):
 
     def __repr__(self):
 
-        if (self.good_catcher == "Yes"):
+        if (self.good_catcher == "Y"):
             isGoodCatcher = 'Good Catcher'
         else:
             isGoodCatcher = 'Not a Good Catcher'
 
         if self.owner:
-            return f"Puppy name is {self.name} with eye color {self.eye_color} and is {isGoodCatcher} and owned by {self.owner.name}"
+            return f"Puppy ID: {self.id} and  Name: {self.name} with Eye Color: {self.eye_color} and is {isGoodCatcher}, Owned by {self.owner.name}"
         else:
-            return f"Puppy name is {self.name} and has no owner assigned yet."
+            return f"Puppy ID: {self.id} and  Name: {self.name} has no owner assigned yet."
 
 class Owner(db.Model):
 

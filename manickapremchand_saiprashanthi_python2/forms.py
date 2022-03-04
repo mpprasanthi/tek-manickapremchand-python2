@@ -7,7 +7,7 @@ class AddForm(FlaskForm):
 
     name = StringField('Name of Puppy:')
     eye_color = StringField('Eye-color:')
-    good_catcher = StringField('Is Good-Catcher ? :')
+    good_catcher = StringField('Is Good-Catcher ? (Y/N):')
     submit = SubmitField('Add Puppy')
 
 class AddOwnerForm(FlaskForm):
